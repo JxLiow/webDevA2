@@ -1,0 +1,1557 @@
+* {
+    /* border-style: solid; */
+    font-family: sans-serif;
+}
+
+@media screen and (min-width: 720px)
+{
+    /* Index.html section */
+    #indexBody {
+        background-color: lightseagreen;
+    }
+    #indexDiv
+    {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        height: 100%;
+        background:rgba(26, 26, 26, 1.0);
+    }
+    #indexImgGrid
+    {
+        display: grid;
+        grid-template-columns: 33% 34% 33%;
+    }
+    nav {
+        text-align: center;
+        display: grid;
+        /* grid-template-columns: 33% 34% 33%; */
+        color: cornflowerblue;
+        background:rgba(26, 26, 26, 1.0);
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .navDiv {
+        border-color: aqua;
+        margin: auto;
+        height: 2vw;
+        width: 90%;
+        font-size: 2vw;
+    }
+    #mainInfo {
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        background:rgba(26, 26, 26, 1.0);
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    a.nav
+    { 
+        display: block; 
+        line-height: 1.5vw;
+        font-size: 1.5vw;
+        font-family: sans-serif; 
+        text-decoration: none; 
+        color: aliceblue; 
+        border: 2px solid rgb(255, 255, 255); 
+        letter-spacing: 2px; 
+        text-align: center; 
+        position: relative; 
+        transition: all .35s; 
+        border-color: rgb(0, 174, 255);
+        border-radius: 10px;
+    }
+    a span
+    { 
+        position: relative; 
+        z-index: 2; 
+        height: 2vw;
+        line-height: 2vw;
+    }
+    a.nav:after
+    { 
+        position: absolute; 
+        content: ""; 
+        top: 0; 
+        left: 0; 
+        width: 0; 
+        height: 100%; 
+        background: #ececec; 
+        transition: all .35s; 
+        border-radius: 10px;
+    }
+    a.nav:hover
+    { 
+        color: rgb(0, 0, 0); 
+    }
+    h1.Ind
+    {
+        font-size: 4.5vw;
+        text-decoration: underline;
+        background: aliceblue;
+        color: #262626;
+        text-align: center;
+    }
+    h2.Ind
+    {
+        color: aliceblue;
+    }
+    img.Ind {
+        width: 12.5vw;
+        height: 12.5vw;
+        padding: 1.5vw;
+    }
+    .firstToSecond
+    {
+        grid-column: 1/3;
+        height: 8vw;
+    }
+    .secondToThird
+    {
+        grid-column: 2/4;
+        height: 8vw;
+    }
+    .first
+    {
+        grid-column: 1/2;
+    }
+    .third
+    {
+        grid-column: 3/4;
+    }
+    .firstToThird
+    {
+        grid-column: 1/4;
+        height: auto;
+    }
+    /* What Section */
+    #whatBody {
+        background-color: lightseagreen;
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        overflow: hidden;
+    }
+    section.Wha
+    {
+        background:rgba(26, 26, 26, 1.0);
+        height: 95vw;
+    }
+    div.Wha
+    {
+        display: grid;
+        grid-template-columns: 45% 10% 45%;
+        height: 20vw;
+    }
+    #whatSec4Grid
+    {
+        display: grid;
+        grid-template-columns: 33% 34% 33%;
+        height: 40vw;
+    }
+    .background
+    {
+        background: rgb(255, 228, 196, 0.65);
+        border-radius: 2em;
+        padding: 1vw;
+    }
+    a.Wha
+    {
+        width: 7.5vw;
+        height: 1.5vw;
+        position: relative;
+        background-color: #fff;
+        color: #262626;
+        padding: 1vw 2vw;
+        font-size: 1.35vw;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    h1.Wha
+    {
+        font-size: 4.5vw;
+        text-decoration: underline;
+        color: aliceblue;
+        text-align: center;
+    }
+    h2.Wha {
+        font-size: 1.5vw;
+        height: auto;
+        color: rgb(0, 0, 0);
+    }
+    h3.Wha {
+        font-size: 1.05vw;
+        text-align: center;
+        padding: 3vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        color: rgb(6, 6, 6);
+        height: 3vw;
+    }
+    img.Wha
+    {
+        width: 30vw;
+        height:20vw;
+        display: block;
+        margin: auto;
+        padding:1vw;
+        animation: breath 4s ease-out infinite normal;
+    }
+    p.Wha
+    {
+        font-size: 1.75vw;
+        margin: 1vw;
+    }
+    #steers
+    {
+        width: 25vw;
+        height: 25vw;
+    }
+    #drummer
+    {
+        width: 25vw;
+        height: 25vw;
+    }
+    #paddler
+    {
+        width: 25vw;
+        height: 25vw;
+    }
+    .flip-card {
+        background-color: transparent;
+        width: 25vw;
+        height: 25vw;
+        perspective: 1000px;
+    }
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 4px 4px 8px 0 rgba(255, 255, 255, 0.588);
+    }
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+        }
+        
+    .flip-card-front, .flip-card-back1, .flip-card-back2, .flip-card-back3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+
+    .flip-card-back1 {
+        background-color: rgb(15, 174, 188);
+        color: white;
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-back2 {
+        background-color: rgb(188, 38, 15);
+        color: white;
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-back3 {
+        background-color: rgb(206, 196, 15);
+        color: white;
+        transform: rotateY(180deg);
+    }
+    #bigImg
+    {
+        animation: shake 4s linear infinite;
+        width: 45%;
+	margin-bottom: 1vw;
+    }
+    /* History Section */
+    #historyBody {
+        background-color: lightseagreen;
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        overflow: hidden;
+    }
+    section
+    {
+        position: relative;
+        width: 100%;
+        height: 145vw;
+        background: #262626;
+        color: rgb(241, 228, 213);
+    }
+    section.His .content
+    {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section.His .content h2
+    {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        font-size: 2.5vw;
+        transition: 0.5s;
+        transform-origin: left;
+    }
+    section.His .content h3
+    {
+        position: relative;
+        margin: 5px 0 0;
+        padding: 0;
+        display: inline-block;
+        font-size: 2.5vw;
+        transition: 0.5s;
+        transform-origin: left;
+    }
+    section.His .content p
+    {
+        font-size: 1.5vw;
+        transition: 1s;
+    }
+    section.His .content a
+    {
+        width: 7.5vw;
+        height: 1.5vw;
+        text-align: center;
+        position: relative;
+        background-color: #fff;
+        color: #262626;
+        padding: 1vw 2vw;
+        font-size: 1.35vw;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    img.His
+    {
+        width: 40vw;
+        height: 20vw;
+        text-align: left;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 50vw;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(73, 73, 73, 0.5);
+      }
+    .container
+    {
+        width: 40vw;
+        position: relative;
+    }
+    .container:hover .overlay {
+        opacity: 1;
+        width: 40vw;
+    }
+    .hiddenText {
+        color: white;
+        font-size: 1.5vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+    /* How Section */
+    #howBody {
+        width: 80%;
+        background-color: lightseagreen;
+    }
+    #howDiv
+    {
+        background:rgba(26, 26, 26, 1.0);
+        display: grid;
+        height: 100%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+    .howBoxGrid
+    {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        display: grid;
+        padding: 2vw;
+        grid-template-columns: 40% 60%;
+        column-gap: 1vw;
+    }
+    h1.How
+    {
+        font-size: 4.5vw;
+        text-decoration: underline;
+        background: aliceblue;
+        color: #262626;
+        text-align: center;
+    }
+    h2.How
+    {
+        font-size: 1.5vw;
+        padding: 2vw;
+    }
+    img.How
+    {
+        width: 20vw;
+        height: 20vw;
+    }
+    img.Options
+    {
+        width: 15vw;
+        height: 15vw;
+    }
+    #placeholder
+    {
+        display: block;
+    }
+    #paddle, #pfd, #seatpad, #guard, #tape
+    {
+        display: none;
+    }
+    /* Misc */
+    .background
+    {
+        background: rgb(255, 228, 196, 0.65);
+        border-radius: 1.5vw;
+        padding: 2vw;
+    }
+    #buttonLeft {
+        display: inline-block;
+        padding: 1vw 2vw;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+        border-radius: 100%;
+        border-width: 0.15vw; 
+        border-style: solid;
+        font-weight: bold;
+        font-size: 2vw;
+        width: 1vw;
+        height: 2.0vw;
+        line-height: 2.0vw;
+        outline: none;
+        margin: auto;
+        position: fixed;
+        left: 2.5vw;
+        top: 50%;
+        transition: all .35s; 
+        animation: leftandright 4s infinite;
+    }
+    #buttonRight {
+        display: inline-block;
+        padding: 1vw 2vw;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+        background-color: rgba(0, 0, 0, 0.0);
+        border-radius: 100%;
+        border-width: 0.15vw;
+        border-style: solid;
+        font-weight: bold;
+        font-size: 2vw;
+        width:1.0vw;
+        height: 2.0vw;
+        line-height: 2.0vw;
+        outline: none;
+        margin: auto;
+        position: fixed;
+        left: 92vw;
+        top: 50%;
+        transition: all .35s; 
+        animation: rightandleft 4s infinite;
+    }
+}
+@media screen and (max-width: 720px) and (min-width: 540px) 
+{
+    /* Index Section */
+    #indexBody {
+        background-color: lightseagreen;
+    }
+    #indexDiv
+    {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        height: 100%;
+        background:rgba(26, 26, 26, 1.0);
+    }
+    #indexImgGrid
+    {
+        display: grid;
+        grid-template-columns: 33% 34% 33%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav {
+        text-align: center;
+        display: grid;
+        /* grid-template-columns: 33% 34% 33%; */
+        color: cornflowerblue;
+        background:rgba(26, 26, 26, 1.0);
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .navDiv {
+        border-color: aqua;
+        margin: auto;
+        height: 2vw;
+        width: 90%;
+        font-size: 2vw;
+    }
+    #mainInfo {
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        background:rgba(26, 26, 26, 1.0);
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    a.nav
+    { 
+        display: block; 
+        line-height: 1.5vw;
+        font-size: 2vw;
+        font-family: sans-serif; 
+        text-decoration: none; 
+        color: aliceblue; 
+        border: 2px solid rgb(255, 255, 255); 
+        letter-spacing: 2px; 
+        text-align: center; 
+        position: relative; 
+        transition: all .35s; 
+        border-color: rgb(0, 174, 255);
+        border-radius: 10px;
+    }
+    a span
+    { 
+        position: relative; 
+        z-index: 2; 
+        height: 2vw;
+        line-height: 2vw;
+    }
+    a.nav:after
+    { 
+        position: absolute; 
+        content: ""; 
+        top: 0; 
+        left: 0; 
+        width: 0; 
+        height: 100%; 
+        background: #ececec; 
+        transition: all .35s; 
+        border-radius: 10px;
+    }
+    a.nav:hover
+    { 
+        color: rgb(0, 0, 0); 
+    }
+    h1.Ind
+    {
+        font-size: 4.5vw;
+        text-decoration: underline;
+        background: aliceblue;
+        color: #262626;
+        text-align: center;
+    }
+    h2.Ind
+    {
+        color: aliceblue;
+        font-size: 3vw;
+    }
+    img.Ind {
+        width: 15.5vw;
+        height: 15.5vw;
+        padding: 1.5vw;
+    }
+    .firstToSecond
+    {
+        grid-column: 1/3;
+        height: 8vw;
+    }
+    .secondToThird
+    {
+        grid-column: 2/4;
+        height: 8vw;
+    }
+    .first
+    {
+        grid-column: 1/2;
+    }
+    .third
+    {
+        grid-column: 3/4;
+    }
+    .firstToThird
+    {
+        grid-column: 1/4;
+        height: auto;
+    }
+    /* What Section */
+    #whatBody {
+        background-color: lightseagreen;
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        overflow: hidden;
+    }
+    section.Wha
+    {
+        background:rgba(26, 26, 26, 1.0);
+        height: 95vw;
+    }
+    div.Wha
+    {
+        display: grid;
+        grid-template-columns: 45% 10% 45%;
+        height: 40vw;
+    }
+    #whatSec4Grid
+    {
+        display: grid;
+        grid-template-columns: 33% 34% 33%;
+        height: 40vw;
+    }
+    a.Wha
+    {
+        width: 7.5vw;
+        height: 1.5vw;
+        position: relative;
+        background-color: #fff;
+        color: #262626;
+        padding: 1vw 2vw;
+        font-size: 1.75vw;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    h1.Wha
+    {
+        font-size: 4.5vw;
+        text-decoration: underline;
+        color: aliceblue;
+        text-align: center;
+    }
+    h2.Wha {
+        font-size: 1.8vw;
+        height: auto;
+        color: rgb(0, 0, 0);
+    }
+    h3.Wha {
+        font-size: 1.9vw;
+        text-align: center;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        color: rgb(6, 6, 6);
+        height: 7vw;
+    }
+    img.Wha
+    {
+        width: 35vw;
+        height:25vw;
+        display: block;
+        margin: auto;
+        padding:1vw;
+        animation: breath 4s ease-out infinite normal;
+    }
+    p.Wha
+    {
+        font-size: 1.75vw;
+        margin: 1vw;
+    }
+    #steers
+    {
+        width: 25vw;
+        height: 25vw;
+    }
+    #drummer
+    {
+        width: 25vw;
+        height: 25vw;
+    }
+    #paddler
+    {
+        width: 25vw;
+        height: 25vw;
+    }
+    .flip-card {
+        background-color: transparent;
+        width: 25vw;
+        height: 25vw;
+        perspective: 1000px;
+    }
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 4px 4px 8px 0 rgba(255, 255, 255, 0.588);
+    }
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+        }
+        
+    .flip-card-front, .flip-card-back1, .flip-card-back2, .flip-card-back3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+    
+    .flip-card-back1 {
+        background-color: rgb(15, 174, 188);
+        color: white;
+        transform: rotateY(180deg);
+    }
+    
+    .flip-card-back2 {
+        background-color: rgb(188, 38, 15);
+        color: white;
+        transform: rotateY(180deg);
+    }
+    
+    .flip-card-back3 {
+        background-color: rgb(206, 196, 15);
+        color: white;
+        transform: rotateY(180deg);
+    }
+    #bigImg
+    {
+        animation: shake 4s linear infinite;
+        width: 55%;
+    }
+    /* History Section */
+    #historyBody {
+        background-color: lightseagreen;
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        overflow: hidden;
+    }
+    section
+    {
+        position: relative;
+        width: 100%;
+        height: 145vw;
+        background: #262626;
+        color: rgb(241, 228, 213);
+    }
+    section.His .content
+    {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section.His .content h2
+    {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        font-size: 5vw;
+        transition: 0.5s;
+        transform-origin: left;
+    }
+    section.His .content h3
+    {
+        position: relative;
+        margin: 5px 0 0;
+        padding: 0;
+        display: inline-block;
+        font-size: 3.5vw;
+        transition: 0.5s;
+        transform-origin: left;
+    }
+    section.His .content p
+    {
+        font-size: 2.25vw;
+        transition: 1s;
+    }
+    section.His .content a
+    {
+        width: 9vw;
+        height: 2vw;
+        text-align: center;
+        position: relative;
+        background-color: #fff;
+        color: #262626;
+        padding: 1vw 2vw;
+        font-size: 1.75vw;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    img.His
+    {
+        width: 60vw;
+        height: 35vw;
+        text-align: left;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 50vw;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(73, 73, 73, 0.5);
+      }
+    .container
+    {
+        width: 60vw;
+        position: relative;
+    }
+    .container:hover .overlay {
+        opacity: 1;
+        width: 60vw;
+    }
+    .hiddenText {
+        color: white;
+        font-size: 2vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+    /* How Section */
+    #howBody {
+        width: 80%;
+        background-color: lightseagreen;
+    }
+    #howDiv
+    {
+        background:rgba(26, 26, 26, 1.0);
+        display: grid;
+        height: 100%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+    .howBoxGrid
+    {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        display: grid;
+        padding: 2vw;
+        grid-template-columns: 40% 60%;
+        column-gap: 1vw;
+    }
+    h1.How
+    {
+        font-size: 4.5vw;
+        text-decoration: underline;
+        background: aliceblue;
+        color: #262626;
+        text-align: center;
+    }
+    h2.How
+    {
+        font-size: 2vw;
+        padding: 2vw;
+        margin-left: 4.5vw;
+    }
+    img.How
+    {
+        width: 30vw;
+        height: 30vw;
+    }
+    img.Options
+    {
+        width: 18vw;
+        height: 18vw;
+    }
+    #placeholder
+    {
+        display: block;
+    }
+    #paddle, #pfd, #seatpad, #guard, #tape
+    {
+        display: none;
+    }
+    #onefifth
+    {
+        grid-column: 1/3;
+        
+    }
+    #twofifth
+    {
+        grid-column: 2/3;
+    }
+    #threefifth
+    {
+        grid-column: 3/4;
+    }
+    #fourfifth
+    {
+        grid-column: 4/5;
+    }
+    #fivefifth
+    {
+        grid-column: 4/6;
+        margin-left: 8.5vw;
+    }
+    /* Misc */
+    .background
+    {
+        background: rgb(255, 228, 196, 0.65);
+        border-radius: 1.5vw;
+        padding: 2.5vw;
+    }
+    #buttonLeft {
+        display: inline-block;
+        padding: 2vw 3vw;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+        border-radius: 100%;
+        border-width: 0.15vw; 
+        border-style: solid;
+        font-weight: bold;
+        font-size: 3vw;
+        width: 1vw;
+        height: 2.0vw;
+        line-height: 2.0vw;
+        outline: none;
+        margin: auto;
+        position: fixed;
+        left: 1.5vw;
+        top: 50%;
+        transition: all .35s; 
+        animation: leftandright 4s infinite;
+    }
+    #buttonRight {
+        display: inline-block;
+        padding: 2vw 3vw;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+        background-color: rgba(0, 0, 0, 0.0);
+        border-radius: 100%;
+        border-width: 0.15vw;
+        border-style: solid;
+        font-weight: bold;
+        font-size: 3vw;
+        width:1.0vw;
+        height: 2.0vw;
+        line-height: 2.0vw;
+        outline: none;
+        margin: auto;
+        position: fixed;
+        left: 91vw;
+        top: 50%;
+        transition: all .35s;
+        animation: rightandleft 4s infinite;
+    }
+}
+@media screen and (max-width: 540px) 
+{
+    #indexBody {
+        background-color: lightseagreen;
+    }
+    #indexDiv
+    {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        height: 100%;
+        background:rgba(26, 26, 26, 1.0);
+    }
+    #indexImgGrid
+    {
+        display: grid;
+        grid-template-columns: 33% 34% 33%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav {
+        text-align: center;
+        display: grid;
+        /* grid-template-columns: 33% 34% 33%; */
+        color: cornflowerblue;
+        background:rgba(26, 26, 26, 1.0);
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .navDiv {
+        border-color: aqua;
+        margin: auto;
+        height: 2vw;
+        width: 90%;
+        font-size: 2vw;
+    }
+    #mainInfo {
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        background:rgba(26, 26, 26, 1.0);
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    a.nav
+    { 
+        display: block; 
+        line-height: 1.5vw;
+        font-size: 2.5vw;
+        font-family: sans-serif; 
+        text-decoration: none; 
+        color: aliceblue; 
+        border: 2px solid rgb(255, 255, 255); 
+        letter-spacing: 2px; 
+        text-align: center; 
+        position: relative; 
+        transition: all .35s; 
+        border-color: rgb(0, 174, 255);
+        border-radius: 10px;
+    }
+    a span
+    { 
+        position: relative; 
+        z-index: 2; 
+        height: 2vw;
+        line-height: 2vw;
+    }
+    a.nav:after
+    { 
+        position: absolute; 
+        content: ""; 
+        top: 0; 
+        left: 0; 
+        width: 0; 
+        height: 100%; 
+        background: #ececec; 
+        transition: all .35s; 
+        border-radius: 10px;
+    }
+    a.nav:hover
+    { 
+        color: rgb(0, 0, 0); 
+    }
+    h1.Ind
+    {
+        font-size: 4.5vw;
+        text-decoration: underline;
+        background: aliceblue;
+        color: #262626;
+        text-align: center;
+    }
+    h2.Ind
+    {
+        color: aliceblue;
+        font-size: 3vw;
+    }
+    img.Ind {
+        width: 15.5vw;
+        height: 15.5vw;
+        padding: 1.5vw;
+    }
+    .firstToSecond
+    {
+        grid-column: 1/3;
+        height: 8vw;
+    }
+    .secondToThird
+    {
+        grid-column: 2/4;
+        height: 8vw;
+    }
+    .first
+    {
+        grid-column: 1/2;
+    }
+    .third
+    {
+        grid-column: 3/4;
+    }
+    .firstToThird
+    {
+        grid-column: 1/4;
+        height: auto;
+    }
+    /* What Section */
+    #whatBody {
+        background-color: lightseagreen;
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        
+        overflow: hidden;
+    }
+    section.Wha
+    {
+        background:rgba(26, 26, 26, 1.0);
+        height: 120vw;
+    }
+    div.Wha
+    {
+        display: grid;
+        grid-template-columns: 45% 10% 45%;
+        height: 40vw;
+    }
+    .full
+    {
+        grid-column: 1/4;
+    }
+    #whatSec4Grid
+    {
+        display: grid;
+        grid-template-columns: 33% 34% 33%;
+        height: 40vw;
+    }
+    a.Wha
+    {
+        width: 10vw;
+        height: 2vw;
+        position: relative;
+        background-color: #fff;
+        color: #262626;
+        padding: 3vw 4vw;
+        font-size: 2.5vw;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 700;
+        margin-top: 3vw;
+    }
+    h1.Wha
+    {
+        font-size: 4.5vw;
+        text-decoration: underline;
+        color: aliceblue;
+        text-align: center;
+    }
+    h2.Wha {
+        font-size: 2.75vw;
+        height: auto;
+        color: rgb(0, 0, 0);
+        margin-top: 0;
+    }
+    h3.Wha {
+        font-size: 2.25vw;
+        text-align: center;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        color: rgb(6, 6, 6);
+        height: 7vw;
+        margin-top: 5vw;
+    }
+    img.Wha
+    {
+        width: 45vw;
+        height:35vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin: auto;
+        padding:1vw;
+        animation: breath 4s ease-out infinite normal;
+    }
+    p.Wha
+    {
+        font-size: 1.75vw;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #steers
+    {
+        width: 30vw;
+        height: 30vw;
+    }
+    #drummer
+    {
+        width: 30vw;
+        height: 30vw;
+    }
+    #paddler
+    {
+        width: 30vw;
+        height: 30vw;
+    }
+    .flip-card {
+        background-color: transparent;
+        width: 30vw;
+        height: 30vw;
+        perspective: 1000px;
+    }
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 4px 4px 8px 0 rgba(255, 255, 255, 0.588);
+    }
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+        }
+        
+    .flip-card-front, .flip-card-back1, .flip-card-back2, .flip-card-back3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+    
+    .flip-card-back1 {
+        background-color: rgb(15, 174, 188);
+        color: white;
+        transform: rotateY(180deg);
+    }
+    
+    .flip-card-back2 {
+        background-color: rgb(188, 38, 15);
+        color: white;
+        transform: rotateY(180deg);
+    }
+    
+    .flip-card-back3 {
+        background-color: rgb(206, 196, 15);
+        color: white;
+        transform: rotateY(180deg);
+    }
+    #bigImg
+    {
+        animation: shake 4s linear infinite;
+        width: 80%;
+    }
+    /* History Section */
+    #historyBody {
+        background-color: lightseagreen;
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        overflow: hidden;
+    }
+    section
+    {
+        position: relative;
+        width: 100%;
+        height: 145vw;
+        background: #262626;
+        color: rgb(241, 228, 213);
+    }
+    section.His .content
+    {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section.His .content h2
+    {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        font-size: 6vw;
+        transition: 0.5s;
+        transform-origin: left;
+    }
+    section.His .content h3
+    {
+        position: relative;
+        margin: 5px 0 0;
+        padding: 0;
+        display: inline-block;
+        font-size: 4.5vw;
+        transition: 0.5s;
+        transform-origin: left;
+    }
+    section.His .content p
+    {
+        font-size: 3vw;
+        transition: 1s;
+    }
+    section.His .content a
+    {
+        width: 11.5vw;
+        height: 3.5vw;
+        text-align: center;
+        position: relative;
+        background-color: #fff;
+        color: #262626;
+        padding: 1vw 2vw;
+        font-size: 2.25vw;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    img.His
+    {
+        width: 65vw;
+        height: 45vw;
+        text-align: left;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 50vw;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(73, 73, 73, 0.5);
+      }
+    .container
+    {
+        width: 65vw;
+        position: relative;
+    }
+    .container:hover .overlay {
+        opacity: 1;
+        width: 65vw;
+    }
+    .hiddenText {
+        color: white;
+        font-size: 3vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+    /* How Section */
+    #howBody {
+        width: 80%;
+        background-color: lightseagreen;
+    }
+    #howDiv
+    {
+        background:rgba(26, 26, 26, 1.0);
+        display: grid;
+        height: 100%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+    .howBoxGrid
+    {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        display: grid;
+        padding: 2vw;
+        grid-template-columns: 40% 60%;
+        column-gap: 1vw;
+    }
+    h1.How
+    {
+        font-size: 4.5vw;
+        text-decoration: underline;
+        background: aliceblue;
+        color: #262626;
+        text-align: center;
+    }
+    h2.How
+    {
+        font-size: 2.25vw;
+        padding: 2vw;
+        margin-left: 4.5vw;
+    }
+    img.How
+    {
+        width: 30vw;
+        height: 30vw;
+    }
+    img.Options
+    {
+        width: 25vw;
+        height: 25vw;
+    }
+    #placeholder
+    {
+        display: block;
+    }
+    #paddle, #pfd, #seatpad, #guard, #tape
+    {
+        display: none;
+    }
+    .left
+    {
+        grid-column: 1/3;
+        margin-left: 7vw;
+    }
+    .right
+    {
+        grid-column: 4/6;
+    }
+    .mid
+    {
+        grid-column: 2/5;
+    }
+    /* Misc */
+    .background
+    {
+        background: rgb(255, 228, 196, 0.65);
+        border-radius: 2.5vw;
+        padding: 3vw;
+    }
+    #buttonLeft {
+        display: inline-block;
+        padding: 2vw 3vw;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+        border-radius: 100%;
+        border-width: 0.3vw; 
+        border-style: solid;
+        font-weight: bold;
+        font-size: 3vw;
+        width: 1vw;
+        height: 2.0vw;
+        line-height: 2.0vw;
+        outline: none;
+        margin: auto;
+        position: fixed;
+        left: 1.5vw;
+        top: 50%;
+        transition: all .35s; 
+        animation: leftandright 4s infinite;
+    }
+    #buttonRight {
+        display: inline-block;
+        padding: 2vw 3vw;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+        background-color: rgba(0, 0, 0, 0.0);
+        border-radius: 100%;
+        border-width: 0.3vw;
+        border-style: solid;
+        font-weight: bold;
+        font-size: 3vw;
+        width:1.0vw;
+        height: 2.0vw;
+        line-height: 2.0vw;
+        outline: none;
+        margin: auto;
+        position: fixed;
+        left: 91.25vw;
+        top: 50%;
+        transition: all .35s; 
+        animation: rightandleft 4s infinite;
+    }
+}
+
+/* Overall Section */
+
+#buttonLeft:after, #buttonRight:after
+{
+    position: absolute; 
+    content: ""; 
+    top: 0; 
+    left: 0; 
+    width: 0; 
+    height: 100%; 
+    transition: all .35s; 
+    border-radius: 100%;
+}
+#buttonLeft:hover, #buttonRight:hover
+{ 
+    color: rgb(239, 239, 239); 
+}
+a.nav:hover:after, #buttonLeft:after, #buttonRight:after
+{ 
+    width: 100%; 
+}
+
+.firstToFifth
+{
+    grid-column: 1/6;
+    height: auto;
+}
+.bottom
+{
+    margin-top: 0;
+    margin-bottom: auto;
+}
+.middle
+{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.bottom
+{
+    margin-top: auto;
+    margin-bottom: 0;
+}
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tCenter
+{
+    text-align: center;
+}
+.tLeft
+{
+    text-align: left;
+}
+.tRight
+{
+    text-align: right;
+}
+u
+{
+    font-size: 2.5vw;
+}
+.margin
+{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.padding
+{
+    padding-bottom: 1.25vw;
+    padding-top: 1.25vw;
+}
+
+/* Keyframes Section */
+
+@keyframes breath {0%{transform:scale(0.9)} 25%{transform:scale(1.0)} 100%{transform:scale(0.9)}}
+@keyframes shake {0% {transform:rotate(5deg);} 50% {transform:rotate(-5deg);} 100% {transform:rotate(5deg);}}
+@keyframes leftandright {0%{transform:translateX(5px)} 50%{transform:translateX(-5px)} 100%{transform:translateX(5px)}}
+@keyframes rightandleft {0%{transform:translateX(-5px)} 50%{transform:translateX(5px)} 100%{transform:translateX(-5px)}}

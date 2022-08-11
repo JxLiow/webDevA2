@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/stylesheet.css" rel="stylesheet">
+    <title>How to Dragonboat</title>
+</head>
+<body id="howBody" class="center">
+    <!-- Used to travel current to previous page -->
+    <a id="buttonLeft" href="History.html"> < </a>
+    <div id="howDiv">
+        <div class="firstToFifth">
+            <h1 class="How">
+                Pick an item!
+            </h1>
+        </div>
+        <!-- placeholder that is visible for now -->
+        <div id="placeholder" class="firstToFifth margin">
+            <div class="howBoxGrid background">
+                <img class="How middle center" src="Images-and-Gifs/placeholder.png">
+                <h2 class="How center middle">
+                    -
+                </h2>
+            </div>
+        </div>
+        <!-- hidden, but displays if user clicks on image below -->
+        <div id="paddle" class="firstToFifth margin">
+            <div class="howBoxGrid background">
+                <img class="How middle center" src="Images-and-Gifs/paddle.png">
+                <h2 class="How center middle">
+                    <u>Paddle</u> <br>
+                    <br>
+                    A Paddle is essential when it comes to dragonboating. <br>
+                    It is used to dip into the water and pulled with force backwards<br>
+                    in order to propel the boat forward.
+                </h2>
+            </div>
+        </div>
+        <!-- hidden, but displays if user clicks on image below -->
+        <div id="pfd" class="firstToFifth margin">
+            <div class="howBoxGrid background">
+                <img class="How middle center" src="Images-and-Gifs/pfd.jpg">
+                <h2 class="How center middle">
+                    <u>PFD (Personal Floating Device)</u> <br>
+                    <br>
+                    Must be worn when loading up onto a boat.<br>
+                    Not to be confused with PDF (Portable Document Format)
+                    Helps the wearer stay a float in water if the boat capsizes
+                </h2>
+            </div>
+        </div>
+        <!-- hidden, but displays if user clicks on image below -->
+        <div id="seatpad" class="firstToFifth margin">
+            <div class="howBoxGrid background">
+                <img class="How middle center" src="Images-and-Gifs/seatpad.jpg">
+                <h2 class="How center middle">
+                    <u>Seatpad</u> <br>
+                    <br>
+                    Velcro it onto the boat seat.<br>
+                    Acts as support when the person is paddling,<br>
+                    where their body is constantly moving back and forth.
+                </h2>
+            </div>
+        </div>
+        <!-- hidden, but displays if user clicks on image below -->
+        <div id="guard" class="firstToFifth margin">
+            <div class="howBoxGrid background">
+                <img class="How middle center" src="Images-and-Gifs/guard.jpg">
+                <h2 class="How center middle">
+                    <u>Blade Guard</u> <br>
+                    <br>
+                    Can be slipped onto the end of the blade.<br>
+                    Protects the edge of the blade from being damaged,<br>
+                    since it'll most likely be in contact with the ground.
+                </h2>
+            </div>
+        </div>
+        <!-- hidden, but displays if user clicks on image below -->
+        <div id="tape" class="firstToFifth margin">
+            <div class="howBoxGrid background">
+                <img class="How middle center" src="Images-and-Gifs/tape.png">
+                <h2 class="How center middle">
+                    <u>Grip Tape</u> <br>
+                    <br>
+                    Tape that can be applied at where the person<br>
+                    places the arm that moves backwards.<br>
+                    Helps the person have a firmer grip,<br>
+                    in cases of slipping on the water repellent material.
+                </h2>
+            </div>
+        </div>
+        <!-- when pressed, respective content above becomes visible (display:block; instead of display:none;) -->
+        <a id="onefifth" class="left center" onclick="paddle()"><img class="Options margin" src="Images-and-Gifs/paddle.png"></a>
+        <a id="threefifth" class="right center" onclick="pfd()"><img  class="Options margin" src="Images-and-Gifs/pfd.jpg"></a>
+        <a id="fivefifth" class="left center" onclick="seatpad()"><img class="Options margin" src="Images-and-Gifs/seatpad.jpg"></a>
+        <a id="twofifth" class="right center" onclick="guard()"><img class="Options margin" src="Images-and-Gifs/guard.jpg"></a>
+        <a id="fourfifth" class="mid center" onclick="tape()"><img class="Options margin" src="Images-and-Gifs/tape.png"></a>
+    </div>
+    <script type="text/javascript" src="js/javascript.js"></script>
+</body>
+</html>
